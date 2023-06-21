@@ -1,4 +1,5 @@
 #define MAX_HEIGHT 75000
+#define FLOOR 5000
 
 //Table 2.1 Caractere de elevador
 #define SEND_SIGNAL_LEFT_ELEVATOR 'e'
@@ -42,9 +43,15 @@
 #define SIGNAL_DOORS_OPEN 'A'
 #define SIGNAL_DOORS_CLOSED 'F'
 
+
+#define END_COMMAND '\r'
 // ??
 #define READY 'r'
 #define BUSY 'b'
 
-#define END_COMMAND '\r'
 
+
+//exemplo de como enviar um comando para o simulador:
+// char cmd[4] = {SEND_SIGNAL_LEFT_ELEVATOR , 
+//     UP, FLOOR_4, END_COMMAND}
+// printf("%s", cmd);
