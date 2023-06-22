@@ -49,9 +49,23 @@
 #define READY 'r'
 #define BUSY 'b'
 
+#define BUTTON_TRIGGER_FROM_INSIDE 'I'
+#define BUTTON_TRIGGER_FROM_OUTSIDE 'E'
 
 
 //exemplo de como enviar um comando para o simulador:
 // char cmd[4] = {SEND_SIGNAL_LEFT_ELEVATOR , 
 //     UP, FLOOR_4, END_COMMAND}
 // printf("%s", cmd);
+
+//2.4 RESPOSTAS DO SIMULADOR
+//tabela 2.4.3 pressionando botões internos
+// char cmd[4] = {SEND_SIGNAL_CENTER_ELEVATOR,
+//     BUTTON_TRIGGER_FROM_INSIDE, FLOOR_15, END_COMMAND};
+// printf("%s", cmd);
+
+//tabela 2.4.4 acionamente de botoes de subida ou descida
+// de um andar por fora.
+
+// char cmd[8] = {SEND_SIGNAL_RIGHT_ELEVATOR, BUTTON_TRIGGER_FROM_OUTSIDE, '0', '1',
+// '1', '0', UP, END_COMMAND};
