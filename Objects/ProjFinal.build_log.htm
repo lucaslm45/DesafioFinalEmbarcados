@@ -21,13 +21,16 @@ Target DLL:      lmidk-agdi.dll V???
 Dialog DLL:      TCM.DLL V1.56.4.0
  
 <h2>Project:</h2>
-G:\My Drive\UTFPR Pessoal\2023.1\Embarcados\Projetos\DesafioFinalEmbarcados\Final.uvprojx
-Project File Date:  06/21/2023
+G:\My Drive\UTFPR Pessoal\2023.1\Embarcados\Projetos\ProjFinal\ProjFinal.uvprojx
+Project File Date:  07/03/2023
 
 <h2>Output:</h2>
 *** Using Compiler 'V6.19', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
 Build target 'Target 1'
-".\Objects\Final.axf" - 0 Error(s), 0 Warning(s).
+compiling main.c...
+linking...
+Program Size: Code=10180 RO-data=1104 RW-data=1644 ZI-data=34728  
+".\Objects\ProjFinal.axf" - 0 Error(s), 0 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -40,13 +43,6 @@ Package Vendor: ARM
    * Component: Keil RTX5 Variant: Library Version: 5.5.4
 
 Package Vendor: Keil
-                https://www.keil.com/pack/Keil.ARM_Compiler.1.7.2.pack
-                Keil.ARM_Compiler.1.7.2
-                Keil ARM Compiler extensions for ARM Compiler 5 and ARM Compiler 6
-   * Component: Event Recorder Variant: DAP Version: 1.5.1
-   * Component: STDOUT Variant: EVR Version: 1.2.0
-
-Package Vendor: Keil
                 http://www.keil.com/pack/Keil.TM4C_DFP.1.1.0.pack
                 Keil.TM4C_DFP.1.1.0
                 Texas Instruments Tiva C Series Device Support and Examples
@@ -54,12 +50,10 @@ Package Vendor: Keil
 
 <h2>Collection of Component include folders:</h2>
   ./RTE/CMSIS
-  ./RTE/Compiler
   ./RTE/_Target_1
   C:/Users/lucas/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
   C:/Users/lucas/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/Include
   C:/Users/lucas/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Include
-  C:/Users/lucas/AppData/Local/Arm/Packs/Keil/ARM_Compiler/1.7.2/Include
   C:/Users/lucas/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129
 
 <h2>Collection of Component Files used:</h2>
@@ -70,28 +64,20 @@ Package Vendor: Keil
    * Component: ARM::CMSIS:CORE:5.6.0
 
    * Component: ARM::CMSIS:RTOS2:Keil RTX5:Library:5.5.4
-      Include file:  CMSIS/RTOS2/RTX/Include/rtx_os.h
-      Source file:   CMSIS/RTOS2/RTX/Template/main.c
-      Source file:   CMSIS/RTOS2/RTX/Template/Events.c
+      Library file:  CMSIS/RTOS2/RTX/Library/ARM/RTX_CM4F.lib
       Include file:  CMSIS/RTOS2/RTX/Config/RTX_Config.h
-      Source file:   CMSIS/RTOS2/RTX/Config/RTX_Config.c
-      Source file:   CMSIS/RTOS2/RTX/Template/MemPool.c
+      Include file:  CMSIS/RTOS2/RTX/Include/rtx_os.h
+      Source file:   CMSIS/RTOS2/RTX/Template/Semaphore.c
       Source file:   CMSIS/RTOS2/RTX/Template/MsgQueue.c
-      Source file:   CMSIS/RTOS2/RTX/Template/Mutex.c
       Source file:   CMSIS/RTOS2/RTX/Template/Timer.c
       Source file:   CMSIS/RTOS2/RTX/Template/svc_user.c
-      Source file:   CMSIS/RTOS2/RTX/Template/Semaphore.c
       Source file:   CMSIS/RTOS2/RTX/Template/Thread.c
-      Library file:  CMSIS/RTOS2/RTX/Library/ARM/RTX_CM4F.lib
       Source file:   CMSIS/RTOS2/RTX/Source/rtx_lib.c
-
-   * Component: Keil.ARM Compiler::Compiler:Event Recorder:DAP:1.5.1
-      Include file:  Include/EventRecorder.h
-      Include file:  Config/EventRecorderConf.h
-      Source file:   Source/EventRecorder.c
-
-   * Component: Keil.ARM Compiler::Compiler:I/O:STDOUT:EVR:1.2.0
-      Source file:   Source/retarget_io.c
+      Source file:   CMSIS/RTOS2/RTX/Template/main.c
+      Source file:   CMSIS/RTOS2/RTX/Template/Events.c
+      Source file:   CMSIS/RTOS2/RTX/Template/Mutex.c
+      Source file:   CMSIS/RTOS2/RTX/Config/RTX_Config.c
+      Source file:   CMSIS/RTOS2/RTX/Template/MemPool.c
 
    * Component: Keil::Device:Startup:1.0.0
       Include file:  Device/Include/TM4C129/TM4C129.h
